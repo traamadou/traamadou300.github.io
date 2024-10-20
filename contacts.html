@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio d'Amadou TRAORE</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header>
+        <h1>Amadou TRAORE</h1>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">À Propos</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competence.html">Compétences</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Tel: 78 721 10 96</p>
+        <p>Email : <a href="mailto:traamadou300@gmail.com">traamadou300@gmail.com</a> 
+    </section>
+    <section >
+    <div class="container">
+        <h2>Laisser un commentaire</h2>
+        <label for="email">Adresse e-mail :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Votre message :</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        <button onclick="envoyerMessage()">Envoyer</button>
+        <div id="confirmation" class="message"></div>
+    </div>
+    </section>
+    <script src="portfolio.js"></script>
+</body>
+</html>
